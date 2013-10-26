@@ -4,15 +4,16 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Henrique'
 SITENAME = u'Ultramar'
-SITESUBTITLE = u'Polemos Pyrinos'
-SITEURL = ''
+#SITESUBTITLE = u'Polemos Pyrinos'
+#SITEURL = 'http://ultramar.github.io'
+SITEURL = 'http://localhost:8000'
 TYPOGRIFY = True
 
 TIMEZONE = 'Europe/London'
 
 DATE_FORMATS = {
     'en': ('en_US','%a, %d %b %Y'),
-    'pt': ('pt_PT','aos %d de %B de %Y'),
+    'pt': ('pt_PT','%d de %B de %Y'),
 }
 
 THEME = 'pageturner-pelican'
@@ -30,15 +31,18 @@ TRANSLATION_FEED_ATOM = None
 #           ('Jinja2', 'http://jinja.pocoo.org/'),
 #           ('You can modify those links in your config file', '#'),)
 
-DEFAULT_PAGINATION = 1
+DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
 MENUITEMS = [
     ('Blog','/'),
-    ('Archives','/'),
+    ('Arquivo','/archives.html'),
 ]
 
 PLUGIN_PATH = "plugins"
 PLUGINS = ['optimize_images', 'summary', 'post_stats']
+
+DISQUS_SITENAME = 'ultramar-io'
+DISQUS_DEVMODE = True

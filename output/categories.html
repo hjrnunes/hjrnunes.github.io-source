@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
 <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <title>Ultramar</title>
@@ -14,51 +14,54 @@
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="/favicon.png" rel="icon">
-  <link href="/theme/css/main.css" media="screen, projection"
+  <link href="http://localhost:8000/favicon.png" rel="icon">
+  <link href="http://localhost:8000/theme/css/main.css" media="screen, projection"
         rel="stylesheet" type="text/css">
-  <script src="/theme/js/modernizr-2.0.js"></script>
-  <script src="/theme/js/ender.js"></script>
-  <script src="/theme/js/octopress.js" type="text/javascript"></script>
 
   <!-- jQuery and plugins -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-  <script src="/js/jquery.zclip.min.js"></script>
+  <script src="http://localhost:8000/theme/js/jquery.zclip.min.js"></script>
 
-  <!-- Syntax highlighter -->
-  <link href="/stylesheets/prettify-hemisu.css" type="text/css" rel="stylesheet" />
-  <script type="text/javascript" src="/js/prettify.js"></script>
+  <script type="text/javascript">var disqus_developer = 1; // this would set it to developer mode </script> 
 
-
-  <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic"
-        rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
-        rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic|Quando&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 
-<body onload="prettyPrint()">
+<body>
     <div class="wrap">
-  <header><div class="title"><a href="/">Ultramar</a></div>
-    <div class="title">Polemos Pyrinos</div>
+  <header><div class="title">Ultramar</div>
 <div class="navi">
     <ul>
             <li><a href="/">Blog</a></li>
-            <li><a href="/">Archives</a></li>
+            <li><a href="/archives.html">Arquivo</a></li>
             <!-- TODO: add categories here? -->
     <ul>
-    <img alt="Portvgal" src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Flag_United_Kingdom_Portugal_Brazil_Algarves.svg/320px-Flag_United_Kingdom_Portugal_Brazil_Algarves.svg.png">
+    <img alt="Portvgal" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Portuguese_Air_Force_roundel.svg/200px-Portuguese_Air_Force_roundel.svg.png">
+    <!-- http://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Flag_United_Kingdom_Portugal_Brazil_Algarves.svg/320px-Flag_United_Kingdom_Portugal_Brazil_Algarves.svg.png -->
+    <!-- http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/OrderOfCristCross.svg/200px-OrderOfCristCross.svg.png -->
 </div> <!-- // .navi --></header>
   <div id="main">
     <div id="content">
 <ul>
-    <li><a href="/category/python.html">Python</a></li>
+    <li><a href="http://localhost:8000/category/python.html">Python</a></li>
 </ul>
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Henrique -
-  <span class="credit">Powered by <a href="http://getpelican.com">Pelican</a></span>
+  Copyright &copy; 2013 - Nação Portuguesa -
+  <span class="credit">Tocado a <a href="http://getpelican.com">Pelican</a></span>
 </p></footer>
-  </div> <!-- // .wrap -->
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'ultramar-io'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>  </div> <!-- // .wrap -->
 </body>
 </html>
